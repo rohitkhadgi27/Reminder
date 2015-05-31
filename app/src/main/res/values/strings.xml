@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_second">Second Activity</string>
+    <string name="title_activity_custom_tab_view">Custom Tab View</string>
+    <string name="title_activity_add_work">Add Work</string>
+    <string name="title_activity_remaining_detail">Detail</string>
+</resources>
