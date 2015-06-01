@@ -1,6 +1,7 @@
 package com.rohitkhadgi27.myapplication;
 
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
@@ -9,8 +10,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Spannable;
+import android.text.SpannableString;
+import android.text.style.TypefaceSpan;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 
 import com.rohitkhadgi27.myapplication.tabs.SlidingTabLayout;
@@ -20,6 +25,7 @@ public class MainActivity extends ActionBarActivity {
     private Toolbar toolBar;
     private SlidingTabLayout mtabs;
     ViewPager viewPager;
+    TextView v;
 
 
     @Override
@@ -33,6 +39,7 @@ public class MainActivity extends ActionBarActivity {
 
         toolBar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolBar);
+        
         mtabs = (SlidingTabLayout) findViewById(R.id.tabs);
         mtabs.setDistributeEvenly(true);
         mtabs.setCustomTabView(R.layout.custom_tab_view, R.id.tab_text);
@@ -68,9 +75,12 @@ public class MainActivity extends ActionBarActivity {
 
     public class MyAdapter extends FragmentPagerAdapter {
 
+        String[] tabs;
+
         public MyAdapter(FragmentManager fm) {
 
             super(fm);
+            tabs = getResources().getStringArray(R.array.tabs);
 
         }
 
@@ -90,6 +100,10 @@ public class MainActivity extends ActionBarActivity {
             return fragment;
         }
 
+        @Override
+        public CharSequence getPageTitle(int position) {
+            return tabs[position];
+        }
 
         @Override
         public int getCount() {

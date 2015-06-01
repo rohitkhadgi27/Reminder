@@ -9,7 +9,8 @@
         app:showAsAction="never" />
     <item
         android:id="@+id/action_add_work"
-        android:icon="@drawable/ic_light_person"
+        android:icon="@drawable/ic_add_white_24dp"
         android:orderInCategory="99"
         app:showAsAction="always" />
+
 </menu>

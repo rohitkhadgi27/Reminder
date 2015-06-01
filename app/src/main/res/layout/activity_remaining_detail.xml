@@ -42,7 +42,8 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/et_detail"
                 android:layout_marginTop="25dp"
-                android:layout_marginRight="7dp"
+
+                android:background="@color/lightblue"
                 android:text="shift"
                 android:textStyle="bold"/>
 
@@ -51,7 +52,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/remaining__detail_remainder_button"
-                android:layout_marginTop="15dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:background="@color/primaryColor"
                 android:text="update"
                 android:textStyle="bold"/>
 

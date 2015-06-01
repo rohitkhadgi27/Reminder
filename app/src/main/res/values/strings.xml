@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">My Application</string>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Reminder</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
@@ -7,4 +7,9 @@
     <string name="title_activity_custom_tab_view">Custom Tab View</string>
     <string name="title_activity_add_work">Add Work</string>
     <string name="title_activity_remaining_detail">Detail</string>
+    <string-array name="tabs">
+        <item>Remaining</item>
+        <item>Completed</item>
+    </string-array>
+    <string name="title_activity_custom_action_bar_title">CustomActionBarTitle</string>
 </resources>
